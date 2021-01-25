@@ -78,7 +78,6 @@ const InputForm = props => {
         validateInput(firstInput.value, setFirstInput);
         validateInput(secondInput.value, setSecondInput);
         if (method.value.name === 'divide' && secondInput.value === '0') {
-            console.log("wtf")
             setSecondInput({...secondInput, errorMsg: divideByZeroMsg, isError: true});
         }
         setIsSubmitted(true);
